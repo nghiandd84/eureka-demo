@@ -7,7 +7,8 @@ spring:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: ${DOMAIN_NAME:localhost}
+    nonSecurePort: 80
   client:
     registerWithEureka: true
     fetchRegistry: true
